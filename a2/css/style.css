@@ -1,1 +1,50 @@
-/* Insert your styles here */
+/*
+ Insert your styles here
+font-family: 'Press Start 2P', cursive;
+font-family: 'Cabin', sans-serif;
+*/
+body {
+    background-image: url("../media/NERDG3RL_HomePageBG.png");
+    background-size: 100%;
+/*    background-repeat: no-repeat;*/
+}
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: lightyellow;
+    margin-top: 30%;
+
+}
+h1:hover {
+    color: lightpink;
+}
+ul {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    list-style-type: none;
+    margin-left: 5%;
+    padding: 0;
+}
+
+
+li {
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+    display: inline;
+
+}
+a{
+    color: lightpink;
+    text-decoration: none;
+
+
+}
+li a:hover {
+    background-color: lightyellow;
+}
+hr {
+    color: mintcream;
+    size: 20px;
+}
+
