@@ -11,94 +11,140 @@ body {
 /*    background-repeat: no-repeat;*/
 }
 h1 {
-    font-size: 60px;
+    font-size: 3.8em;
     text-align: center;
-    color: lightyellow;
-    margin-top: 30%;
+    color: rgb(255, 242, 204);
+/*    border: 10px solid rgb(230, 184, 175);*/
+    border-radius: 12px;
+    padding: 20px;
+    margin: 150px 80px 100px 80px;
+    position: static;
+
 
 }
 h1:hover {
-    color: lightpink;
+    color: greenyellow;
 }
 
+/*
+#heading {
+    border: 5px, solid, pink;
+}
+*/
 
+ul {
+    position: static;
+    padding-top: 20px;
+}
 li {
+    list-style-position: inside;
     display: inline;
+    padding: 15px;
+/*    border: 1px solid lightyellow; */
+}
+li:hover {
+ background-color: pink;
 
 }
 
-/*a, a:hover */
 a, a:hover {
     text-decoration: none;
 }
-#navbar, #navbar:hover {
+#navbar {
     font-size: 15px;
     font-family: 'Press Start 2P', cursive;
-    margin: 0px;
-    padding: 20px;
-
-
+    position: relative;
 }
+
+
+/*FIX UP IN-LINE LOGIN BUTTON*/
+#nav-login {
+    float:right;
+}
+
+/*FIX UP BACKGROUND A SELECTOR (MIGHT HAVE TO CREATE A SEPERATE LINK)*/
+#nav-login:hover {
+    background-color: greenyellow;
+}
+
 a {
-    color: lightpink;
+    color: rgb(255, 242, 204);
 }
 
-li a:hover {
-    display: inline;
-    background-color: lightyellow;
+
+a:hover {
+/*    display: inline;*/
+    background-color: pink;
 }
 
 
 hr {
     width: 100%;
-    color: pink;
-    size: 20px;
+    height: 0.2px;
+    color: rgb(230, 184, 175);
+    background-color: rgb(230, 184, 175);
+    margin-bottom: 50px;
 }
 
+
+
+.space {
+    width:100%;
+    height: 50px;
+}
+/*
 #boxlinks {
     width: 100%;
-    height: 350px;
-    background-color: mintcream;
-    padding-top: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
+    height: 1px;
+    background-color: rgb(255, 242, 204);
 
-}
 
-/*
-#box1 {
-    height: 300px;
-    width: 250px;
-    background-color: antiquewhite;
-    float: left;
+
 }
 */
 
+
 .boxstyle {
-    height: 180px;
+    height: 200px;
     width: 20%;
-    background-color: antiquewhite;
+    background-color: rgb(230, 184, 175);
     float: right;
-    margin-left: 25px;
-    position: relative;
-}
-#box1 {
-    margin-left: 25px;
-    margin-right: 25px;
+    position: static;
+    border-radius: 8px;
 }
 
-#box3, #box3:hover {
-    background-color:black;
-    margin-right:28%;
-    position: absolute;
+#box1 {
+    margin-right: 5px;
 }
+#box1, #box2, #box3 {
+    margin-top: 30px;
+    margin-left: 5px;
+
+}
+#box1:hover, #box2:hover, #box3:hover {
+    font-size: 1.0em;
+    background-color: lightpink;
+
+
+}
+#box3 {
+/*    margin-right:28%;*/
+    position: absolute;
+/*    background-color: black;*/
+}
+
+#box3:hover {
+
+}
+
 
 #box4 {
-    background-color: mintcream;
+    background-color: black;
+    margin-right: 150px;
 }
 
 .boxcontent {
-    font-family: cabin, arial;
+    font-family:arial;
     font-size: 30px;
     color: black;
 }
@@ -109,8 +155,22 @@ a.boxcontent {
     color: black;
 }
 
+h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+/*    padding-left: 15px;*/
+}
+
 h2.boxcontent:hover {
-    background-color: palevioletred;
+    color: rgb(255, 242, 204);
+    font-style: italic;
+}
+
+
+#quote:hover {
+    background-color: pink;
+    color: rgb(255, 242, 204);
 }
 
 
