@@ -32,15 +32,55 @@
         </ul>
     </div>
 
+    <!--
     <div>
         <form action="/action_page.php">
             <br>Username:<br>
-            <input type="text" name="username" value="username">
+            <input type="text" name="username" required>
             <br>Password:<br>
-            <input type="text" name="password" value="password">
+            <input type="password" name="password"  required>
             <br><br>
             <input type="submit" value="SIGN IN">
         </form>
+    </div>
+-->
+
+<!--
+    <div>
+        <label>Email</label><br>
+        <input type="email" name="customer[email]" id="CustomerEmail" autocorrect="off" autocapitalize="off" autofocus="">
+    </div><br>
+
+    <div>
+        <label>Password</label><br>
+        <input type="password" value="">
+    </div>
+
+    <div>
+        <input type="submit" class="button" value="Sign In">
+    </div>
+-->
+
+    <form method="post" action="" id="customer_login" accept-charset="UTF-8">
+        <input type="hidden" name="form_type" value="customer_login">
+        <input type="hidden" name="utf8" value="✓">
+
+        <div>
+            <label for="CustomerEmail" class="label--hidden">Email</label><br>
+            <input type="email" name="customer[email]" id="CustomerEmail" autocorrect="off" autocapitalize="off" autofocus="" required>
+        </div>
+
+        <div>
+            <label for="CustomerPassword" class="label--hidden">Password</label><br>
+            <input type="password" value="" name="customer[password]" id="CustomerPassword" required>
+        </div>
+
+        <div>
+            <input type="submit" class="button" value="Sign In">
+        </div>
+
+        <a href="" id="recover-password-link" class="secondary-form-button">Forgotten your password?</a>
+    </form>
     </div>
 
 
