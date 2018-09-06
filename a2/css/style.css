@@ -1,5 +1,6 @@
 #index_body {
     background-color: #BAA29E;
+    background-image: url(3.png);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
 
@@ -46,6 +47,7 @@
     text-transform: uppercase;
     font-size: 0.825rem;
     position: absolute;
+    margin: inherit;
     /*    right: 1rem;*/
 }
 
@@ -58,6 +60,7 @@
     list-style-type: none;
     float: left;
     padding-right: 10px;
+    position: relative;
 
 }
 
@@ -68,4 +71,28 @@
     font-weight: 700;
     color: #000000;
 
+}
+
+#blurb h2 {
+    text-align: center;
+    position: relative;
+    margin-top: 10%;
+}
+
+#handcrafted h2 {
+    position: relative;
+    text-align: center;
+    padding: 15px;
+}
+
+
+.box1 {
+    margin: inherit;
+}
+#mainimg {
+    object-position: center;
+    display: inline-block;
+    width: 100%;
+    border-radius: 4px;
+    opacity: 0.95;
 }
