@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="JS/script.js"></script>
+
 
 
     <title>PEARL LOOP EARRINGS</title>
@@ -47,6 +49,7 @@
     </div>
 
     <!--    NOTE: JS Dropdownn selectors here and buttons-->
+    <!--
     <div>
         <p>QTY</p>
         <select>
@@ -58,6 +61,20 @@
     </div>
 
     <div><button type="button">PURCHASE</button></div>
+    -->
+
+    <div>
+        <p>QTY</p>
+        <input name="qnt_1" type="text" id="qnt_1" value="0" size="3" data-price="30" onkeyup="CalculateItemsValue()" /><br>
+
+        <br>
+        <p>TOTAL</p>
+
+        <div id="ItemsTotal">$0</div><br>
+
+        <input type="submit" value="PURCHASE" formaction="" />
+    </div>
+
 
 
 
