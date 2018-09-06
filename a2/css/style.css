@@ -1,5 +1,9 @@
 #index_body {
     background-color: #BAA29E;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+
+
 }
 
 .logo {
@@ -29,4 +33,25 @@
     .logo .desktop {
         display: none;
     }
+}
+
+.nav_bar {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.825rem;
+    position: absolute;
+    right: 1rem;
+
+}
+
+.nav_bar a {
+        text-decoration: none;
+
+}
+.nav_bar li{
+    list-style-type: none;
+    float: left;
+    padding-right: 10px;
+
 }
