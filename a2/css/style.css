@@ -73,26 +73,42 @@
 
 }
 
+h2 {
+    font-family: sans-serif;
+    text-decoration: none;
+    text-decoration: none;
+    opacity: 0.95;
+    text-align: justify;
+}
+
 #blurb h2 {
-    text-align: center;
     position: relative;
-    margin-top: 10%;
+/*    margin-top: 10%;*/
+    color: #BBA085;
+    font-stretch: semi-condensed;
+    text-transform: uppercase;
+    padding: 1.0rem;
+
+
 }
 
 #handcrafted h2 {
     position: relative;
     text-align: center;
-    padding: 15px;
+/*    padding: 15px;*/
+    font-size: 0.8rem;
+    margin: inherit;
 }
 
 
 .box1 {
     margin: inherit;
 }
+
 #mainimg {
     object-position: center;
     display: inline-block;
     width: 100%;
-    border-radius: 4px;
-    opacity: 0.95;
+    border-radius: 2px;
+    opacity: 0.87;
 }
