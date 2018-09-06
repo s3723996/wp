@@ -1,0 +1,32 @@
+#index_body {
+    background-color: #BAA29E;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    width: 10%;
+    height: auto;
+}
+
+/*
+.logo .desktop {
+    display: block;
+    height: ;
+    width: auto;
+}
+*/
+
+.logo .mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .logo .mobile {
+        display: block;
+        max-width: 263px;
+    }
+    .logo .desktop {
+        display: none;
+    }
+}
