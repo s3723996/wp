@@ -37,3 +37,24 @@ function validateForm()
         errorEmail.style.display="block"
     }
 }
+
+
+//    var productID = document.getElementByID("count");
+//    var total = 0;
+//    var count = 1;
+//    var countEl = document.getElementById("count");
+//    function plus()
+//{
+//        count++;
+//        countEl.value = count;
+//       total = total + parseInt(countEl.value) * parseInt(count.getAttribute("data-price"));
+//
+//    }
+//    function minus(){
+//      if (count > 1) {
+//        count--;
+//        countEl.value = count;
+//      }
+//          document.getElementById("ItemsTotal").innerHTML = "$" + total;
+//
+//    }
