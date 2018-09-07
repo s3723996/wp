@@ -66,17 +66,17 @@
     </div>
 -->
     <div class="loginformbox">
-    <form method="post" action="" id="customer_login" accept-charset="UTF-8">
+    <form method="post" action="" id="customer_login" accept-charset="UTF-8" onsubmit="validateForm()">
         <input type="hidden" name="form_type" value="customer_login">
         <input type="hidden" name="utf8" value="✓">
 
         <div>
-            <label for="CustomerEmail" class="label--hidden">Email</label><br>
+            <label for="CustomerEmail" class="label--hidden">Email</label><p id="inputEmail"></p><br>
             <input type="email" name="customer[email]" id="CustomerEmail" autocorrect="off" autocapitalize="off" autofocus="" required>
         </div>
 
         <div>
-            <label for="CustomerPassword" class="label--hidden">Password</label><br>
+            <label for="CustomerPassword" class="label--hidden">Password</label><p id="inputPassword"></p><br>
             <input type="password" value="" name="customer[password]" id="CustomerPassword" required>
         </div>
 

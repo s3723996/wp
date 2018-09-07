@@ -19,3 +19,21 @@ function CalculateItemsValue() {
     document.getElementById("ItemsTotal").innerHTML = "$" + total;
 
 }
+
+
+var enterEmail = document.getElementById("CustomerEmail")
+
+var errorEmail = document.getElementById("inputEmail")
+//var enterPassword = document.getElementById("CustomerPassoword");
+
+function validateForm()
+{
+    var emailMessage  = "Please enter Email"
+
+    if (enterEmail === " ")
+    {
+        document.getElementById("inputEmail").innerHTML = emailMessage
+        errorEmail.style.color ="red"
+        errorEmail.style.display="block"
+    }
+}
