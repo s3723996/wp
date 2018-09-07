@@ -11,8 +11,12 @@ body {
 }
 
 #login_body {
-        background-image: url(loginBG.png);
     }
+
+#lookbook_body {
+    background-color: #ebf4ec;
+}
+
 
 .logo {
     /*    position: absolute;*/
@@ -98,8 +102,6 @@ h2 {
     text-transform: uppercase;
     padding: 1.0rem;
     text-align: justify;
-
-
 }
 
 #handcrafted h2 {
@@ -140,6 +142,17 @@ a:visited {
     text-align: center;
 }
 
+#backtostore {
+    padding-top: 1.5rem;
+}
+
+#backtostore a {
+   text-decoration: none;
+    font-size: 0.8rem;
+}
+
+
+
 .storeimages {
     object-position: center;
     display: inline-block;
@@ -148,18 +161,32 @@ a:visited {
     opacity: 0.87;
     margin-top: 10%;
 }
+#singleitemimg {
+    width: 100%
+}
 
-
-#lbimages img  {
+.lbimages img  {
     margin-top: 10%;
     text-align: center;
-    width: 100%;
+    width: 100% !important;
     display: block;
 }
 
 form {
     margin-top: 10%;
 }
+
+.loginformbox {
+    width: 100%;
+    text-align:center;
+    min-height: 138mm;
+}
 footer, #recover-password-link {
     font-size: 0.5rem;
 }
+
+/*
+label {
+    float:left;
+}
+*/
