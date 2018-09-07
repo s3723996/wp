@@ -10,8 +10,7 @@ body {
     letter-spacing: 0.05em;
 }
 
-#login_body {
-    }
+#login_body {}
 
 #lookbook_body {
     background-color: #ebf4ec;
@@ -96,7 +95,8 @@ h2 {
 
 #blurb h2 {
     position: relative;
-    /*    margin-top: 10%;*/
+    background-color: black;
+    opacity: 0.4;
     color: #BBA085;
     font-stretch: semi-condensed;
     text-transform: uppercase;
@@ -134,9 +134,11 @@ a {
 a:visited {
     color: inherit;
 }
+
 #productheader {
     background-color: #ebf4ec;
 }
+
 #productbox1 {
     margin-top: 10%;
     text-align: center;
@@ -147,7 +149,7 @@ a:visited {
 }
 
 #backtostore a {
-   text-decoration: none;
+    text-decoration: none;
     font-size: 0.8rem;
 }
 
@@ -157,15 +159,17 @@ a:visited {
     object-position: center;
     display: inline-block;
     width: 85%;
+    max-width: 400px;
     border-radius: 2px;
     opacity: 0.87;
     margin-top: 10%;
 }
+
 #singleitemimg {
     width: 100%
 }
 
-.lbimages img  {
+.lbimages img {
     margin-top: 10%;
     text-align: center;
     width: 100% !important;
@@ -174,14 +178,18 @@ a:visited {
 
 form {
     margin-top: 10%;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .loginformbox {
     width: 100%;
-    text-align:center;
+    text-align: center;
     min-height: 138mm;
 }
-footer, #recover-password-link {
+
+footer,
+#recover-password-link {
     font-size: 0.5rem;
 }
 
