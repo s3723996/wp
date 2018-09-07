@@ -8,9 +8,11 @@ body {
     background-image: url(3.png);
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.05em;
-
-
 }
+
+#login_body {
+        background-image: url(loginBG.png);
+    }
 
 .logo {
     /*    position: absolute;*/
@@ -155,6 +157,9 @@ a:visited {
     display: block;
 }
 
-footer {
+form {
+    margin-top: 10%;
+}
+footer, #recover-password-link {
     font-size: 0.5rem;
 }
