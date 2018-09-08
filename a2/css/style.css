@@ -10,12 +10,13 @@ body {
     letter-spacing: 0.05em;
 }
 
-#login_body {}
-
 #lookbook_body {
     background-color: #ebf4ec;
 }
 
+header {
+    padding-left: 10px;
+}
 
 .logo {
     /*    position: absolute;*/
@@ -24,13 +25,6 @@ body {
     height: auto;
 }
 
-/*
-.logo .desktop {
-    display: block;
-    height: ;
-    width: auto;
-}
-*/
 
 .logo .mobile {
     display: none;
@@ -57,19 +51,23 @@ body {
     font-size: 0.825rem;
     position: absolute;
     width: 100%;
-    /*    margin: inherit;*/
-    /*    right: 1rem;*/
+    text-align: center;
 }
 
+/*
 .navbar ul {
     text-align: center;
     display: block;
     width: 100%;
 }
+*/
 
-
-
-
+#navul {
+    float: right;
+    position: relative;
+    font-size: 1.2rem;
+     margin-right: 10px;
+}
 .nav_bar li {
     list-style-type: none;
     float: left;
@@ -93,16 +91,25 @@ h2 {
     opacity: 0.95;
 }
 
+#blurb {
+    margin-top:50px;
+}
 #blurb h2 {
     position: relative;
     background-color: black;
-    opacity: 0.4;
+    opacity: 0.1;
     color: #BBA085;
     font-stretch: semi-condensed;
     text-transform: uppercase;
     padding: 1.0rem;
     text-align: justify;
 }
+
+#blurb h2:hover {
+    opacity: 0.4;
+}
+
+
 
 #handcrafted h2 {
     position: relative;
@@ -115,6 +122,16 @@ h2 {
 
 .box1 {
     margin: inherit;
+    border: 5px solid antiquewhite;
+/*
+    border-top-color: antiquewhite;
+    border-right-color: antiquewhite;
+*/
+    opacity: .8;
+    min-height: 300px;
+    padding: 5%;
+
+
 }
 
 #mainimg {
@@ -122,7 +139,8 @@ h2 {
     display: inline-block;
     width: 100%;
     border-radius: 2px;
-    opacity: 0.87;
+    opacity: 0.85;
+    margin-top: 5%;
 }
 
 a {
@@ -131,6 +149,11 @@ a {
 
 }
 
+a:hover {
+    text-decoration:underline;
+    color:#ebf4ec;
+    opacity: 0.2;
+}
 a:visited {
     color: inherit;
 }
