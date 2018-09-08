@@ -198,6 +198,9 @@ a:visited {
     width: 100% !important;
     display: block;
 }
+.lbimages img:hover {
+    opacity: 0.8;
+}
 
 form {
     margin-top: 10%;
