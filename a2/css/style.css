@@ -66,8 +66,9 @@ header {
     float: right;
     position: relative;
     font-size: 1.2rem;
-     margin-right: 10px;
+    margin-right: 10px;
 }
+
 .nav_bar li {
     list-style-type: none;
     float: left;
@@ -92,8 +93,9 @@ h2 {
 }
 
 #blurb {
-    margin-top:50px;
+    margin-top: 50px;
 }
+
 #blurb h2 {
     position: relative;
     background-color: black;
@@ -123,7 +125,7 @@ h2 {
 .box1 {
     margin: inherit;
     border: 5px solid antiquewhite;
-/*
+    /*
     border-top-color: antiquewhite;
     border-right-color: antiquewhite;
 */
@@ -150,10 +152,11 @@ a {
 }
 
 a:hover {
-    text-decoration:underline;
-    color:#ebf4ec;
+    text-decoration: underline;
+    color: #ebf4ec;
     opacity: 0.2;
 }
+
 a:visited {
     color: inherit;
 }
@@ -189,7 +192,7 @@ a:visited {
 }
 
 #singleitemimg {
-    width: 100%
+    width: 100% max-width: 700px;
 }
 
 .lbimages img {
@@ -198,6 +201,7 @@ a:visited {
     width: 100% !important;
     display: block;
 }
+
 .lbimages img:hover {
     opacity: 0.8;
 }

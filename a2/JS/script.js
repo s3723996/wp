@@ -29,9 +29,9 @@ function CalculateItemsValue() {
 }
 
 
-function checkLogin () {
+function checkLogin() {
     var email = document.getElementById("CustomerEmail");
-    var pwd = document.getElementById ("CustomerPassword");
+    var pwd = document.getElementById("CustomerPassword");
 
     var emailMsg = "Please enter E-mail";
     var pawdMsg = "Please enter Password";
@@ -39,13 +39,10 @@ function checkLogin () {
     if (email.value == "") {
         email.innerHTML = emailMsg;
         return false;
-    }
-
-    else if (pwd.value == "") {
+    } else if (pwd.value == "") {
         pwd.innerHTML = pwdMsg;
         return false;
-    }
-    else {
+    } else {
         return true;
     }
 }
