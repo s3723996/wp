@@ -28,7 +28,7 @@
     </header>
 
 
-     <div class="nav_bar">
+    <div class="nav_bar">
         <ul>
             <li><a href="index.html">HOME</a></li>
             <li><a href="product.html">STORE</a></li>
@@ -66,26 +66,26 @@
     </div>
 -->
     <div class="loginformbox">
-    <form method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" id="customer_login" accept-charset="UTF-8" onsubmit="validateForm()">
-        <input type="hidden" name="form_type" value="customer_login">
-        <input type="hidden" name="utf8" value="✓">
+        <form method="post" action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php" id="customer_login" accept-charset="UTF-8" onsubmit="return checkLogin();">
+            <input type="hidden" name="form_type" value="customer_login">
+            <input type="hidden" name="utf8" value="✓">
 
-        <div>
-            <label for="CustomerEmail" class="label--hidden">Email</label><p id="inputEmail"></p><br>
-            <input type="email" name="customer[email]" id="CustomerEmail" autocorrect="off" autocapitalize="off" autofocus="" required>
-        </div>
+            <div>
+                <label for="CustomerEmail" class="label--hidden">Email</label><br>
+                <input type="email" name="customer[email]" id="CustomerEmail" autocorrect="off" autocapitalize="off" autofocus="" >
+            </div>
 
-        <div>
-            <label for="CustomerPassword" class="label--hidden">Password</label><p id="inputPassword"></p><br>
-            <input type="password" value="" name="customer[password]" id="CustomerPassword" required>
-        </div>
+            <div>
+                <br><label for="CustomerPassword" class="label--hidden">Password</label><br>
+                <input type="password" value="" name="customer[password]" id="CustomerPassword" >
+            </div>
 
-        <div>
-            <input type="submit" class="button" value="Sign In">
-        </div><br>
+            <div>
+                <input type="submit" class="button" value="Sign In" >
+            </div><br>
 
-        <a href="" id="recover-password-link" class="secondary-form-button">Forgotten your password?</a>
-    </form>
+            <a href="" id="recover-password-link" class="secondary-form-button">Forgotten your password?</a>
+        </form>
     </div>
 
 

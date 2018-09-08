@@ -29,18 +29,24 @@ function CalculateItemsValue() {
 }
 
 
-var enterEmail = document.getElementById("CustomerEmail")
+function checkLogin () {
+    var email = document.getElementById("CustomerEmail");
+    var pwd = document.getElementById ("CustomerPassword");
 
-var errorEmail = document.getElementById("inputEmail")
-//var enterPassword = document.getElementById("CustomerPassoword");
+    var emailMsg = "Please enter E-mail";
+    var pawdMsg = "Please enter Password";
 
-function validateForm() {
-    var emailMessage = "Please enter Email"
+    if (email.value == "") {
+        email.innerHTML = emailMsg;
+        return false;
+    }
 
-    if (enterEmail === " ") {
-        document.getElementById("inputEmail").innerHTML = emailMessage
-        errorEmail.style.color = "red"
-        errorEmail.style.display = "block"
+    else if (pwd.value == "") {
+        pwd.innerHTML = pwdMsg;
+        return false;
+    }
+    else {
+        return true;
     }
 }
 
