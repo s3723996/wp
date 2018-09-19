@@ -1,3 +1,4 @@
+<?php
 <!DOCTYPE html>
 <html>
 
@@ -98,3 +99,4 @@
 </footer>
 
 </html>
+?>
