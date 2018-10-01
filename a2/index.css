@@ -1,0 +1,173 @@
+body {
+    font-family: arial;
+}
+
+#lookbook_body {
+    background-color: #ebf4ec;
+}
+
+#index_body {
+    /*    background-image: url("A2media/1.png");*/
+    background-color: #BAA29E;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.05em;
+}
+
+.logo {
+    top: 0px;
+    width: 10%;
+    height: auto;
+}
+
+/*
+.logo .mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .logo .mobile {
+        display: block;
+        max-width: 263px;
+        padding: 3em 2em 1em 3em;
+                padding-left: 100%
+
+    }
+    .logo .desktop {
+        display: none;
+    }
+}
+*/
+
+header {
+    padding-left: 10px;
+}
+
+#product_header {
+    background-color: #ebf4ec;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    transition: background 0.2s ease-in-out;
+
+}
+
+.nav_bar {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.825rem;
+    /*    position: absolute;*/
+    width: 100%;
+    text-align: center;
+}
+
+#navul {
+/*
+    float: right;
+    position: relative;
+    font-size: 1.2rem;
+    margin-right: 10px;
+*/
+
+    float: right;
+    position: relative;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    margin-top: 2.0rem;
+}
+
+.nav_bar li {
+    list-style-type: none;
+    float: left;
+    padding-right: 10px;
+    position: relative;
+    font-family: arial;
+}
+
+.nav_bar a {
+    text-decoration: none;
+    padding-left: 0.8rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.logo {
+    top: 0px;
+    width: 10%;
+    height: auto;
+}
+
+#blurb h2 {
+    position: relative;
+    background-color: black;
+    opacity: 0.1;
+    color: #BBA085;
+    font-stretch: semi-condensed;
+    text-transform: uppercase;
+    padding: 1.0rem;
+    text-align: justify;
+}
+
+#blurb h2:hover {
+    opacity: 0.4;
+}
+
+#mainimg {
+    object-position: center;
+    display: inline-block;
+    width: 100%;
+    border-radius: 2px;
+    opacity: 0.85;
+    margin-top: 5%;
+}
+
+.box1 {
+    margin: inherit;
+    border: 5px solid antiquewhite;
+    opacity: .8;
+    min-height: 300px;
+    padding: 5%;
+}
+
+
+.storeimages {
+    object-position: center;
+    display: inline-block;
+    width: 85%;
+    max-width: 400px;
+    border-radius: 2px;
+    opacity: 0.87;
+    margin-top: 10%;
+}
+
+.lookbook_image img {
+    margin-top: 10%;
+    text-align: center;
+    width: 100% !important;
+    display: block;
+}
+
+.lookbook_image img:hover {
+    opacity: 0.8;
+}
+
+a:#store_link {
+    text-decoration: none;
+}
+
+#product_box {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.loginformbox {
+    width: 100%;
+    text-align: center;
+    min-height: 138mm;
+    margin-top: 10%;
+}
+
+footer {
+    font-size: 0.5rem;
+}
