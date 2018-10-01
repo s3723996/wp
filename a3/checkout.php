@@ -26,6 +26,16 @@
         </ul>
     </div><br>
     <h2>CHECKOUT PAGE</h2>
+
+    <div>
+        <form>
+            <label>Firstname</label><br>
+            <input type="text" name="Firstname" value="Firstname" required/><br>
+            <label>Surname</label><br><input type="text" name="Surname" value="Surname" required/><br>
+            <label>Email</label><br><input type="email" name="email" value="email" required/><br>
+            <label>Authorize</label><input type="checkbox" name="email" value="email" required/>
+        </form>
+    </div>
 </body>
 <footer>
     &copy; Copyright 2018 PIECES by YJ, Saadiya Fourie [s3723996]
