@@ -25,7 +25,7 @@
             <li><a href="login.php">LOGIN</a></li>
         </ul>
     </div><br>
-    <h2>CART PAGE</h2>
+    <h2>CHECKOUT PAGE</h2>
 </body>
 <footer>
     &copy; Copyright 2018 PIECES by YJ, Saadiya Fourie [s3723996]
