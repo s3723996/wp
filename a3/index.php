@@ -1,3 +1,8 @@
+<?php
+
+// saves session variable, using the session start remember the user name which is need to login. Very important for a login session!
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -43,6 +48,17 @@
         <?php echo '<img src="A2media/bodyimg.png" id="mainimg"/>'; ?>
         <?php echo '<img src="A2media/bodyimg.png" id="mainimg"/>'; ?>
     </div>
+     <?php
+    $_SESSION['username'] = " ";
+    echo $_SESSION['username'];
+
+    if (!isset($_SESSION['username'])){
+        echo " You are not logged in";
+    }
+    else {
+        echo " You are logged in";
+    }
+    ?>
 </body>
 
 <footer>
