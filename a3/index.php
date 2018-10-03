@@ -49,8 +49,8 @@
         <?php echo '<img src="A2media/bodyimg.png" id="mainimg"/>'; ?>
     </div>
      <?php
-    $_SESSION['username'] = " ";
-    echo $_SESSION['username'];
+//    $_SESSION['username'] = "zaadie";
+//    echo $_SESSION['username'];
 
     if (!isset($_SESSION['username'])){
         echo " You are not logged in";
