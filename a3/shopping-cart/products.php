@@ -1,6 +1,5 @@
-<?
-
-//php session_start();
+<?php
+//session_start();
 
 
 function csvFilePrint(){
@@ -20,7 +19,7 @@ function csvFilePrint(){
 }
 
 function csvToArray(){
-    $file =fopen("products.csv","r");
+    $file = fopen("products.csv","r");
     flock($file, LOCK_EX);
 
     while ($line = fgets($file))
@@ -34,17 +33,38 @@ function csvToArray(){
 }
 
 
+function listToArray($filename){
+//    $filename = ("products.csv");
 
+    $lines = file($filename);
+
+    echo "<ol>";
+
+    foreach($lines as $i => $line)
+        {
+        echo "<li>$line</li>";
+
+        }
+    echo "</ol>";
+}
+
+
+
+// MAIN METHOD CALLS
+
+// VARIABLES
+$filename = ("products.csv");
 
 //echo csvFilePrint();
-echo csvToArray();
+//echo csvToArray();
 
+echo listToArray($filename);
 
 
 ?>
 
 
-    <!--
+<!--
 <!DOCTYPE html>
 <html>
 <head>
