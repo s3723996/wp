@@ -23,6 +23,25 @@
 </table>
 <a href="cart.php">View Cart</a>
 
+<!-- CSV TO ARRAY TO TABLE(1)-->
+<?php
+    $csv = array_map('str_getcsv', file('products.csv'));
+
+    if (count($csv) > 0):
+?>
+
+<table>
+  <tbody>
+<?php foreach ($csv as $row): array_map('htmlentities', $row); ?>
+    <tr>
+      <td><?php echo implode('</td><td>', $row); ?></td>
+    </tr>
+<?php endforeach; ?>
+  </tbody>
+</table>
+
+<?php endif;?>
+
 
 
 <?php
@@ -61,8 +80,6 @@ function csvToArray(){
 
 
 function listToArray($filename){
-//    $filename = ("products.csv");
-
     $lines = file($filename);
 
     echo "<ol>";
@@ -75,6 +92,22 @@ function listToArray($filename){
     echo "</ol>";
 }
 
+function csvArrayFunc() {
+    $csv = array_map('str_getcsv', file('products.csv'));
+
+//    echo "<p>{$csv[0][1]}</p>";
+
+
+    print_r ($csv);
+    echo "<br>";
+    echo "<br>";
+    echo $csv[5][5];
+
+
+
+}
+
+
 function lines(){
     $line = "--------------------------";
     echo $line, $line, $line, $line, $line, $line, "<br>";
@@ -86,17 +119,50 @@ function lines(){
 // VARIABLES
 $filename = ("products.csv");
 
-echo "<br>";
-echo "<br>";
 
-echo lines();
+//echo csvFilePrint();
+//echo csvToArray();
+//echo listToArray($filename);
+//echo csvArrayFunc();
 
-
-echo csvFilePrint();
-echo csvToArray();
-echo listToArray($filename);
 
 
 ?>
 
+
+<!--CSV TO ARRAY TO TABLE(2)--->
+
+<?php
+//    function build_table($array){
+//    // start table
+//    $html = '<table>';
+//    // header row
+//    $html .= '<tr>';
+//    foreach($array[0] as $key=>$value){
+//            $html .= '<th>' . htmlspecialchars($key) . '</th>';
+//        }
+//    $html .= '</tr>';
+//
+//    // data rows
+//    foreach( $array as $key=>$value){
+//        $html .= '<tr>';
+//        foreach($value as $key2=>$value2){
+//            $html .= '<td>' . htmlspecialchars($value2) . '</td>';
+//        }
+//        $html .= '</tr>';
+//    }
+//
+//    // finish table and return it
+//
+//    $html .= '</table>';
+//    return $html;
+//}
+//
+//    $array = array_map('str_getcsv', file('products.csv'));
+//
+//echo build_table($array);
+
+
+echo csvArrayFunc();
+?>
 
