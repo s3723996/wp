@@ -8,7 +8,8 @@ if (empty($_SESSION['cart'])){
 }
 
 
-// GET product ID and store it in a SESSION
+
+// GET product ID and store it in a array['cart']
 array_push($_SESSION['cart'], $_GET['id']);
 ?>
 

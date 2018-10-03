@@ -2,7 +2,8 @@
 
 session_start();
 
-var_dump($_SESSION['cart']);
+var_dump($_SESSION['cart'])
 
 
 ?>
+
