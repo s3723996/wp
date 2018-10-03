@@ -24,3 +24,24 @@ function addToCart(){
     array_push($SESSION['price'], $details[2]);
 }
 ?>
+
+
+      <?php
+
+            $sql = "SELECT id, name, description, price FROM php_shop_products;";
+
+            $result = mysql_query($sql);
+
+            while(list($id, $name, $description, $price) = mysql_fetch_row($result)) {
+
+                echo "<tr>";
+
+				echo "<td>$name</td>";
+				echo "<td>$description</td>";
+				echo "<td>$price</td>";
+				echo "<td><a href=\"cart.php?action=add&id=$id\">Add To Cart</a></td>";
+
+			     echo "</tr>";
+            }
+
+        ?>
