@@ -1,3 +1,6 @@
+<?php ?>
+
+
 <table border="1">
 
     <tr>
@@ -94,19 +97,11 @@ function listToArray($filename){
 
 function csvArrayFunc() {
     $csv = array_map('str_getcsv', file('products.csv'));
-
-//    echo "<p>{$csv[0][1]}</p>";
-
-
     print_r ($csv);
-    echo "<br>";
-    echo "<br>";
-    echo $csv[5][5];
-
-
-
+    echo "<br/>";
+    echo "<br/>";
+    var_dump ($csv);
 }
-
 
 function lines(){
     $line = "--------------------------";
@@ -163,6 +158,5 @@ $filename = ("products.csv");
 //echo build_table($array);
 
 
-echo csvArrayFunc();
-?>
+echo csvFliePrint();
 
