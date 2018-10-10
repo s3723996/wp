@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 //print_r ($_POST);
 
 $product1 = array( 'ID' => 100,
@@ -25,11 +25,6 @@ function printProduct3($product3){
     print_r ($product3);
 }
 
-
-
-
-
-
 $inputError;
 $message;
 
@@ -49,10 +44,8 @@ $message;
                 <?php echo ($product1['description']);?>
                 <?php echo '$'. ($product1['price']);?>
             </h3>
-
             <input type="submit" onclick="page2.php" name="<?php echo ($product1['description']);?>" value='<?php echo "ADD TO CART" ?>'>
-
-            <input type="hidden" id="100" name="<?php echo ($product1['description']);?>" value='<?php print_r ($product1);?>'>
+            <input type="hidden" id="<?php echo $product1['ID']; ?>" name="<?php echo ($product1['description']);?>" value='<?php print_r ($product1);?>'>
         </form>
 
 
@@ -62,7 +55,7 @@ $message;
                 <?php echo '$'. ($product2['price']);?>
             </h3>
 
-            <input type="submit" onclick="page2.php" name="<?php echo ($product2['description']);?>" value='<?php echo "ADD TO CART" ?>'>
+            <input type="button" onclick="page2.php" name="<?php echo ($product2['description']);?>" value='<?php echo "ADD TO CART"?>'>
 
             <input type="hidden" id="200" name="<?php echo ($product2['description']);?>" value='<?php print_r ($product2);?>'>
         </form>
@@ -77,12 +70,6 @@ $message;
 
             <input type="hidden" id="300" name="<?php echo ($product3['description']);?>" value='<?php print_r ($product3);?>'>
         </form>
-
-
-
-
-
-
     </body>
 
     </html>
