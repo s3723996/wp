@@ -1,9 +1,9 @@
 <?php
 	//MAIN ARRAY
 	$products = array (
-        array("ID" => "1", "OID" => " ", "Title" => "Chain Loop Earrings", "Description" => "Earrings", "Option" => "One Size", "Price" =>"30", "Image" =>"media/ear.jpg"),
-        array("ID" => "2", "OID" => " ", "Title" => "Necklace", "Description" => "Necklace", "Option" => "One Size", "Price" =>"60", "Image" =>"media/necklace.jpg"),
-        array("ID" => "3", "OID" => "S", "Title" => "Buckle Belt", "Description" => "Belt", "Option" => "SMALL", "Price" =>"120", "Image" =>"media/belt.jpg"));
+        array("ID" => "1", "OID" => " ", "Title" => "Chain Loop Earrings", "Description" => "LIMITED EDITION, PAIR OF SS19 ‘NOT-ONLY-ONE’ COLLECTION LOOP EARRINGS. ORIGINALLY PRODUCED FOR THE MELBOURNE DESIGNERS MARKET. DETAILS: * GOLD CHAIN DANGLE * PASTEL BEADED ELEMENTS * ONE-OFF PIECE WORLDWIDE SHIPPING AVAILABLE. PLEASE ALLOW 3-5 WORKING DAYS FOR PROCESSING PRIOR TO SHIPMENT. FOR OUR REFUND & EXCHANGE POLICY PLEASE VISIT OUR TERMS & CONDITIONS PAGE", "Option" => "One Size", "Price" =>"30", "Image" =>"media/ear.jpg"),
+        array("ID" => "2", "OID" => " ", "Title" => "Necklace", "Description" => "LIMITED EDITION, PIECE FROM THE SS19 ‘NOT-ONLY-ONE’ COLLECTION CHAIN NECKLACE. ORIGINALLY PRODUCED FOR THE MELBOURNE DESIGNERS MARKET. DETAILS: * CUSTOM CHAIN MID * LOCALLY SOURCED MATERIALS * ONE-OFF PIECE WORLDWIDE SHIPPING AVAILABLE. PLEASE ALLOW 3-5 WORKING DAYS FOR PROCESSING PRIOR TO SHIPMENT. FOR OUR REFUND & EXCHANGE POLICY PLEASE VISIT OUR TERMS & CONDITIONS PAGE", "Option" => "One Size", "Price" =>"60", "Image" =>"media/necklace.jpg"),
+        array("ID" => "3", "OID" => "S", "Title" => "Buckle Belt", "Description" => "LIMITED EDITION, PIECE FROM THE SS19 ‘NOT-ONLY-ONE’ COLLECTION BUCKLE BELT. ORIGINALLY PRODUCED FOR THE MELBOURNE DESIGNERS MARKET. DETAILS: * GUN-METAL BUCKLE * PIECES by YJ ENGRAVING * ONE-OFF PIECE WORLDWIDE SHIPPING AVAILABLE. PLEASE ALLOW 3-5 WORKING DAYS FOR PROCESSING PRIOR TO SHIPMENT. FOR OUR REFUND & EXCHANGE POLICY PLEASE VISIT OUR TERMS & CONDITIONS PAGE", "Option" => "SMALL", "Price" =>"120", "Image" =>"media/belt.jpg"));
 
 	//PRODUCT ARRAYS
 	$product1 = $products[0];
