@@ -1,50 +1,73 @@
 <?php
-// saves session variable, using the session start remember the user name which is need to login. Very important for a login session!
-    session_start();
+
+session_name("YJ");
+session_start();
+
+include("productarray.php");
+
+if (empty($_SESSION['cart'])){
+	$_SESSION['cart'] = array();
+}
+
+echo "<h1>CART PAGE</h1>";
+
+$_SESSION['cart'] ="";
+// echo $_SESSION['cart'];// output: Array ( [0] => "id" )
+$a_length = count($products);
+
+
+
+//Loops through once to check id and push correct product to array
+// while($i < $one ){
+	if ($product1["ID"] == $_GET["id"]){
+
+		array_push($_SESSION['cart'], $product1);
+	}
+	else if($product2["ID"] == $_GET['id']){
+
+		array_push($_SESSION['cart'], $product2);
+	}
+	else if($product3["ID"] == $_GET['id'])
+	{
+		array_push($_SESSION['cart'], $product3);
+	}
+
+// ------------------- Array Calls Testing ------------------
+
+for ($i = 0; $i < $a_length; $i++){
+	if ($_SESSION['cart'][$i] == $products[$i]["ID"])
+	{
+		$id =$products[$i]["ID"];
+		$title = $products[$i]["Title"];
+		$price = number_format($products[$i]["Price"], 2, ".", " ");
+		$desc = $products[$i]["Description"];
+		$img = $products[$i]["Image"];
+
+	}
+}
+
+$cartLength = count($_SESSION['cart']);
+
 ?>
-<!DOCTYPE html>
-<html>
+	<br>
+	<a href="products.php">
+		<input type="button" value="BACK TO STORE">
+	</a>
+	<form action="checkout.php" method="post">
+		<!-- <input type="button" value="CLEAR CART" name="clearCart">
+		<input type="hidden" name="cart" value="<?php $_SESSION['cart'];?>">
+		<input type="submit" name="<?php $userCart ?>"> -->
+		<p><input type='submit' name="append" value='Append to cart'/><input type='submit' name='delete' value='Empty cart'></p>
+	</form>
+	<a href="checkout.php>
+		<input type="button" value="CHECKOUT">
+	</a>
+<?php
+include("footer.php");
+?>
 
-<head>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <title>STORE</title>
-</head>
 
-<body>
-    <header id="product_header">
-        <div class="logo">
-            <a href="index.php">
-            <?php echo '<img src="A2media/Logo.png" id="mobile"/>';?>
 
-            <?php echo '<img src="A2media/Logo.png" id="desktop"/>';?>
-            </a>
-        </div>
-    </header>
 
-    <div class="nav_bar">
-        <ul id="navul">
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="product.php">STORE</a></li>
-            <li><a href="lookbook.php">SS'19</a></li>
-            <li><a href="login.php">LOGIN</a></li>
-        </ul>
-    </div><br>
-    <h2>CART PAGE</h2>
 
-    <?php
-    $_SESSION['username'] = "";
-    echo $_SESSION['username'];
 
-    if (!isset($_SESSION['username'])){
-        echo " You are not logged in";
-    }
-    else {
-        echo " You are logged in";
-    }
-    ?>
-</body>
-<footer>
-    &copy; Copyright 2018 PIECES by YJ, Saadiya Fourie [s3723996]
-</footer>
-
-</html>
