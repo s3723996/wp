@@ -1,19 +1,14 @@
 <?php
 
-include("productarray.php");
-
 echo <<<DISP
-	<DOCTYPE html>
-	<html>
 	<head>
 		<title>PIECES BY YJ</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css\style.css">
 	<head>
     <div class="nav_bar">
     <header>
         <div class="logo">
             <a href="index.php">
-                <img src="media/Logo.png" id="mobile"/>
                 <img src="media/Logo.png" id="desktop"/>
             </a>
         </div>

@@ -10,6 +10,7 @@ include("header.php");
 // START OF HTML ODC
 echo <<<DISP
 <body>
+<div id="product_box">
 DISP;
 
 // ---------------PRODUCT TABLE ARRAY PLAY---------------
@@ -24,12 +25,14 @@ foreach ($products as $k => $v){
 	$desc = $v['Description'];
 	$img = $v['Image'];
 	echo<<<DISP
-	<div>
-		<a href="product.php?id=$id">
+	<div >
+		<a href="product.php?id=$id" >
 		<span>$title</span>
 		<span>$desc</span>
 		<span>\$$price</span>
-		<br><img src=$img class="prod_img">
+        <div class="store_img>
+		<br><img src=$img class="storeimages">
+        </div>
 		</a>
 	</div>
 
@@ -60,6 +63,7 @@ DISP;
 
 // END OF BODY
 echo <<<DISP
+</div>
 </body>
 </html>
 DISP;
