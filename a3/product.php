@@ -34,7 +34,7 @@ include("header.php");
 		<input type="button" value="VIEW CART">
 	</a>
 	<form action="checkout.php" method="post">
-		<h3><?php echo $title?></h3>
+		<h3><?php echo $title ?></h3>
 		<div>
 			<br>
 			<span><img src="<?php echo $img?>" class="prod_img"/></span>
